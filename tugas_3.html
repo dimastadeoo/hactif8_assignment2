@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tugas 1</title>
+</head>
+
+<body>
+    <script>
+        var nama = prompt("Masukkan Nama Anda", "");
+        var gender = prompt("Masukkan Gender Anda L/P", "");
+
+        if (gender == 'L' || gender == 'l') {
+            var minuman = prompt("Selamat Datang, Mrs. " + nama + " Masukkan Minuman yang ingin dipesan", "");
+            if (minuman == 'jus' || minuman == 'JUS' || minuman == 'Jus') {
+                alert('Mohon Maaf Jus tidak tersedia')
+            } else {
+                alert('Siap Mrs ' + nama + ' Satu ' + minuman + ' Segera Datang!')
+            }
+
+        } else if (gender == 'P' || gender == 'p') {
+            var minuman = prompt("Selamat Datang, Ms. " + nama + " Masukkan Minuman yang ingin dipesan", "");
+            if (minuman == 'jus' || minuman == 'JUS' || minuman == 'Jus') {
+                alert('Mohon Maaf Jus tidak tersedia')
+            } else {
+                alert('Siap Ms ' + nama + ' Satu ' + minuman + ' Segera Datang!')
+            }
+        } else {
+            window.location = 'tugas_3.html';
+        }
+    </script>
+</body>
+
+</html>
